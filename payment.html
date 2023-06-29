@@ -1,0 +1,182 @@
+<html>
+    <head>
+      <link rel="stylesheet" href="./css/style.css">
+       <link
+      href="https://unpkg.com/ionicons@4.5.10-0/dist/css/ionicons.min.css"
+      rel="stylesheet"
+    />
+    </head>
+    <body>
+       <header>
+      <div class="logo"><a href="#">ShoPperZ</a></div>
+      <div class="menu">
+        <a href="#">
+          <ion-icon name="close" class="close"></ion-icon>
+        </a>
+
+        <ul>
+          <li><a href="index.html" class="under">HOME</a></li>
+          <li><a href="#" class="under">SHOP</a></li>
+          <li><a href="#" class="under">OUR PRODUCTS</a></li>
+          <li><a href="./contact.html" class="under">CONTACT US</a></li>
+          <li><a href="./aboutus.html" class="under">ABOUT US</a></li>
+        </ul>
+      </div>
+      <div class="search">
+        
+          ><input type="text" placeholder="search products" id="input" />
+          <ion-icon class="s" name="search"></ion-icon>
+      </div>
+      <div class="heading">
+        <ul>
+          <li><a href="index.html" class="under">HOME</a></li>
+          <li><a href="#" class="under">SHOP</a></li>
+          <li><a href="#" class="under">OUR PRODUCTS</a></li>
+          <li><a href="./contact.html" class="under">CONTACT US</a></li>
+          <li><a href="./aboutus.html" class="under">ABOUT US</a></li>
+        </ul>
+      </div>
+      <div class="heading1">
+        <ion-icon name="menu" class="ham"></ion-icon>
+      </div>
+    </header>
+    <br><br>
+<div class="container">
+
+    <form class="well form-horizontal" method="post" onsubmit="order(event)"  name="google-sheet" id="contact_form">
+<fieldset>
+
+<!-- Form Name -->
+<legend>Contact Us Today!</legend>
+
+<!-- Text input-->
+<h4 id="descp">You are ordering</h4>
+<div class="form-group">
+  <label class="col-md-4 control-label">First Name</label>  
+  <div class="col-md-4 inputGroupContainer">
+  <div class="input-group">
+  <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+  <input  name="first_name" placeholder="First Name" class="form-control" required type="text">
+    </div>
+  </div>
+</div>
+
+<!-- Text input-->
+
+<div class="form-group">
+  <label class="col-md-4 control-label" >Last Name</label> 
+    <div class="col-md-4 inputGroupContainer">
+    <div class="input-group">
+  <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+  <input name="last_name" placeholder="Last Name" class="form-control" required type="text">
+    </div>
+  </div>
+</div>
+
+<!-- Text input-->
+       <div class="form-group">
+  <label class="col-md-4 control-label">E-Mail</label>  
+    <div class="col-md-4 inputGroupContainer">
+    <div class="input-group">
+        <span class="input-group-addon"><i class="glyphicon glyphicon-envelope"></i></span>
+  <input name="email" placeholder="E-Mail Address" class="form-control" required type="email">
+    </div>
+  </div>
+</div>
+
+
+<!-- Text input-->
+       
+<div class="form-group">
+  <label class="col-md-4 control-label">Phone Number</label>  
+    <div class="col-md-4 inputGroupContainer">
+    <div class="input-group">
+        <span class="input-group-addon"><i class="glyphicon glyphicon-earphone"></i></span>
+  <input name="phone" placeholder="Phone" class="form-control" maxlength="10" required type="text">
+    </div>
+  </div>
+</div>
+
+<!-- Text input-->
+      
+<div class="form-group">
+  <label class="col-md-4 control-label">Address</label>  
+    <div class="col-md-4 inputGroupContainer">
+    <div class="input-group">
+        <span class="input-group-addon"><i class="glyphicon glyphicon-home"></i></span>
+  <input name="address" placeholder="Address" class="form-control" required type="text">
+    </div>
+  </div>
+</div>
+
+<!-- Text input-->
+ 
+<div class="form-group">
+  <label class="col-md-4 control-label">City</label>  
+    <div class="col-md-4 inputGroupContainer">
+    <div class="input-group">
+        <span class="input-group-addon"><i class="glyphicon glyphicon-home"></i></span>
+  <input name="city" placeholder="city" class="form-control" required type="text">
+    </div>
+  </div>
+</div>
+
+<!-- Select Basic -->
+   
+<div class="form-group"> 
+  <label class="col-md-4 control-label">State</label>
+    <div class="col-md-4 selectContainer">
+    <div class="input-group">
+        <span class="input-group-addon"><i class="glyphicon glyphicon-list"></i></span>
+    <select name="state" class="form-control selectpicker">
+      <option>Please select your state</option>
+      <option>Alabama</option>
+      <option>Alaska</option>
+      <option >Madhya Pradesh</option>
+      <option >Arkansas</option>
+      <option >California</option>
+      <option >Colorado</option>
+      <option >Connecticut</option>
+      <option >Delaware</option>
+      <option >District of Columbia</option>
+      <option> Maharastra</option>
+      <option >Georgia</option>
+      <option >Hawaii</option>
+      <option >daho</option>
+      <option >Illinois</option>
+      <option >Indiana</option>
+      <option >Bihar</option>
+    </select>
+  </div>
+</div>
+</div>
+
+<!-- Text input-->
+
+<div class="form-group">
+  <label class="col-md-4 control-label">Zip Code</label>  
+    <div class="col-md-4 inputGroupContainer">
+    <div class="input-group">
+        <span class="input-group-addon"><i class="glyphicon glyphicon-home"></i></span>
+  <input name="zip" placeholder="Zip Code" class="form-control" required type="text">
+    </div>
+</div>
+</div>
+
+<!-- Button -->
+<div>
+  <label class="col-md-4 control-label"></label>
+  <br>
+  <div class="col-md-4">
+    <button >Order Now</button>
+  </div>
+</div>
+
+</fieldset>
+</form>
+</div>
+    </div><!-- /.container -->
+      <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+    <script src="././js/ecomm.js"></script>
+    </body>
+    </html>
